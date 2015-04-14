@@ -1,0 +1,6 @@
+MaxIteration                            2000
+
+%checkpoint
+checkpoint_base                 restart
+checkpoint_interval             100
+

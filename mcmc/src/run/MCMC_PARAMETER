@@ -1,0 +1,26 @@
+OutputFileName              chainlog
+NDimension                  1
+NChain                      8
+MaxIteration                1000
+MCMCMethod                  1
+
+% differential evolution
+DEFullJumpFreq                  10
+DEProposalScale                 0.05     % use the default if negative or 0
+
+% tempered differential evolution
+MaxTemperature                  1.0
+MaxTempLevel                    1
+MinTempLevel                    1
+IterPerTemp                 	10
+ProposalScaleTempIndex          0.5
+
+PriorFileName                   Prior.txt
+InitialStateFileName            Initial.txt
+InitialStateMethod              1
+ProposalFileName                Proposal.txt
+
+%checkpoint
+checkpoint_base                 restart
+checkpoint_interval             100
+
